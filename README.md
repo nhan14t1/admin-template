@@ -1,9 +1,9 @@
 # admin-template
-Admin template that has creating post component (using react quill), SEO tip utils.
+Nextjs/Reactjs Admin template that has creating post component (using react quill) and Rank Math SEO simulator to support SEO.
 
 How to use?
 - npm install
-- npm run dev or npm run sm
+- npm run dev (or npm run sm)
 - Go to localhost:3000/admin
 - Click to New Post button to see the new post screen
   ![image](https://github.com/nhan14t1/admin-template/assets/21092463/5c2344a8-9fa2-440b-bdf8-f085ad7b7345)
