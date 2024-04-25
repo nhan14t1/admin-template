@@ -1,0 +1,25 @@
+.admin_sidebar {
+  min-height: 100vh;
+
+  .logo {
+    margin: 10px 0;
+    display: flex;
+
+    a {
+      margin: auto;
+    }
+  }
+
+  .sider {
+    .menu {
+      :global {
+        .ant-menu-title-content {
+          svg {
+            min-width: 34px;
+          }
+        }
+      }
+    }
+  }
+
+}

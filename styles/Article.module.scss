@@ -1,0 +1,50 @@
+.wrapper {
+  font-weight: normal;
+  font-style: normal;
+  color: rgba(0, 0, 0, 0.87);
+
+  .date {
+    font-size: 12px;
+    line-height: 31px;
+    letter-spacing: 0.83px;
+    text-transform: uppercase;
+  }
+
+  .divider {
+    opacity: 0.5;
+    border: 0;
+    height: 0;
+    border-top: 1px solid #979797;
+  }
+
+  .content {
+    img {
+      max-width: 100%;
+    }
+  }
+
+  .figcaption {
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 0.3px;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+    margin-top: 8px;
+  }
+
+  .tags {
+    border: 1px #ddd solid;
+    padding: 16px;
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .wrapper {
+    width: 100%;
+  }
+
+  .media_wrapper {
+    margin-top: 20px;
+  }
+}

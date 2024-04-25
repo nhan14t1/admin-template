@@ -1,0 +1,18 @@
+.footer {
+  width: 100%;
+  background: #40A2E3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+
+  .container {
+    padding: 20px 0 !important;
+
+    .linkIcons {
+      svg {
+        font-size: 24px;
+      }
+    }
+  }
+}

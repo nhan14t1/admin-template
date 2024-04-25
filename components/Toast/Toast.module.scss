@@ -1,0 +1,101 @@
+.toast {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    height: 32px;
+    color: white;
+
+    &.saved {
+        background: linear-gradient(to bottom, #388e3c 25%, #26752a 100%);
+    }
+
+    &.removed {
+        background: linear-gradient(to bottom, #d32f2f 25%, #c01a1a 100%);
+    }
+
+    .icon {
+        width: 10.5px;
+        height: 13.5px;
+        margin-right: 5px;
+
+        &.saved_icon {
+            background-image: url("../../public/assets/bookmarkon-icon@2x.svg");
+        }
+
+        &.removed_icon {
+            background-image: url("../../public/assets/bookmarkoff-icon@2x.svg");
+        }
+    }
+
+    .text {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 32px;
+        letter-spacing: 0.3px;
+        text-transform: uppercase;
+        color: #ffffff;
+    }
+}
+
+.show {
+    animation: fadeIn 0.2s linear forwards;
+}
+
+.hide {
+    animation: fadeOut 0.2s linear forwards;
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0.2;
+    }
+    50% {
+        opacity: 0.6;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0.2;
+    }
+    50% {
+        opacity: 0.6;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeOut {
+    0% {
+        opacity: 0.6;
+    }
+    50% {
+        opacity: 0.2;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 0.6;
+    }
+    50% {
+        opacity: 0.2;
+    }
+    100% {
+        opacity: 0;
+    }
+}

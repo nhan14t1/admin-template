@@ -1,0 +1,18 @@
+.first_name {
+  color: white;
+  font-size: 16px;
+
+  .label {
+    display: inline-block;
+    max-width: 120px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    margin-right: 4px;
+  }
+
+  .icon {
+    position: relative;
+    top: -4px;
+  }
+}

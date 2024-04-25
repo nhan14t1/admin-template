@@ -1,0 +1,117 @@
+@import './reset/variables';
+
+.app-content {
+  * {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+
+    .dx-htmleditor-content * {
+      font-family: -apple-system, $font-stack !important;
+    }
+  }
+
+  a {
+    color: #40A2E3;
+  }
+
+  h1,
+  h1 * {
+    font-size: 30px !important;
+    line-height: 32px;
+  }
+
+  h2,
+  h2 * {
+    font-size: 26px !important;
+    line-height: 28px;
+  }
+
+  h3,
+  h3 * {
+    font-size: 20px !important;
+    line-height: 22px;
+  }
+
+  h4,
+  h4 * {
+    font-size: 18px !important;
+    line-height: 20px;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 10px 0 16px; // For react-quill editor
+
+    strong {
+      font-weight: unset;
+    }
+  }
+
+  .ql-editor pre,
+  .ql-editor blockquote,
+  .ql-editor h1,
+  .ql-editor h2,
+  .ql-editor h3,
+  .ql-editor h4,
+  .ql-editor h5,
+  .ql-editor h6 {
+    margin: 10px 0 16px; // Override devextreme react-quill editor
+  }
+
+  p,
+  ul,
+  ol {
+    margin-bottom: 16px; // For react-quill editor
+  }
+
+  .ql-editor p,
+  .ql-editor ul,
+  .ql-editor ol {
+    margin: 0 0 16px; // Override devextreme react-quill editor
+
+    &, span, strong, em {
+      font-size: 16px !important;
+    }
+  }
+
+  .ql-align {
+    &-left {
+      text-align: left;
+    }
+
+    &-right {
+      text-align: right;
+    }
+
+    &-center {
+      text-align: center;
+    }
+
+    &-justify {
+      text-align: justify;
+    }
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  table {
+    width: 100%;
+
+    tr td {
+      border: 1px solid #ddd;
+      padding: 2px 5px;
+
+      p {
+        margin-top: 4px;
+        margin-bottom: 4px;
+      }
+    }
+  }
+}

@@ -1,0 +1,64 @@
+.heading {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    h1 {
+        line-height: 49px;
+        margin: 0;
+    }
+
+    .toolkit {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+
+        Select {
+            margin-left: 22px;
+        }
+    }
+}
+
+.empty {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .icon {
+        display: block;
+        background-image: url("../public/assets/file-empty.svg");
+        width: 100px;
+        height: 100px;
+        background-size: 100% 100%;
+        margin-bottom: 15px;
+    }
+
+    h4 {
+        color: #696969;
+    }
+}
+
+@media (max-width: 600px) {
+    .heading {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+
+        h1,
+        .toolkit {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+
+            > * {
+                margin-top: 10px;
+            }
+
+            Select {
+                margin: 0;
+            }
+        }
+    }
+}

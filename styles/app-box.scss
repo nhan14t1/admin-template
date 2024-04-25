@@ -1,0 +1,18 @@
+.app-box {
+  background-color: white;
+  padding: 16px;
+}
+
+.app-border, .app-box {
+  border: 1px #ddd solid;
+}
+
+.app-border-radius, .app-box {
+  border-radius: 4px;
+}
+
+@media only screen and (min-width: 576px) {
+  .p-landing {
+    padding: 32px;
+  }
+}
